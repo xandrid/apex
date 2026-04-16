@@ -1,0 +1,56 @@
+# Python overrides
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Next.js / Frontend builds
+.next/
+out/
+build/
+dist/
+
+# Data, Models, and Local Databases
+apex_data/
+*.pkl
+# Ignore all json files globally EXCEPT specific ones (like package.json, which is handled below if needed)
+*.json
+*.jsonl
+*.npy
+# But allow specific configuration JSONs if any exist at the root
+!backend/package.json
+!frontend/package.json
+!frontend/tsconfig.json
+!backend/tsconfig.json
+
+# Logs
+logs/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+._*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project-specific large files
+embedding_cache.pkl

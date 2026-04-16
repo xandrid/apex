@@ -1,0 +1,72 @@
+# APEX MVP Task List
+
+- [x] Design Architecture and Implementation Plan <!-- id: 0 -->
+- [x] Backend Development <!-- id: 1 -->
+    - [x] Setup FastAPI project structure <!-- id: 2 -->
+    - [x] Implement Claim Decomposition Service (Vertex AI) <!-- id: 3 -->
+    - [x] Troubleshoot backend startup
+    - [x] Fix gcloud installation
+    - [x] Fix .env loading
+    - [x] Enable Vertex AI API
+    - [x] Fix Quota Project
+    - [x] Migrate to Google AI Studio API Keys (User Request)
+        - [x] Update dependencies (google-generativeai)
+        - [x] Refactor VertexLLMService
+        - [x] Refactor VectorSearchService
+        - [x] Update .env with API Key placeholder
+- [x] Verify End-to-End Flow
+    - [x] Get User API Key
+    - [x] Test Claim Analysis Endpoint
+    - [x] Verify Frontend Results
+
+# Phase 2: Production Architecture & Prototyping
+- [x] Data Pipeline (ETL)
+    - [x] Research Google Patents Public Data (BigQuery)
+    - [x] Design Schema for Patent Chunks (Claims vs Description)
+    - [x] Prototype "Smart Chunking" for Patent Text
+- [x] Advanced Search (Hybrid)
+    - [x] Design Hybrid Search (Vector + Keyword)
+    - [x] Evaluate Vertex AI Search vs Custom Elasticsearch
+    - [x] Implement Hybrid Search Prototype (rank_bm25)
+- [x] AI Accuracy & Grounding
+    - [x] Design Evaluation Framework (Golden Dataset)
+    - [x] Prototype RAG with strict citations
+- [x] AI Accuracy & Grounding
+    - [x] Design Evaluation Framework (Golden Dataset)
+    - [x] Prototype RAG with strict citations
+    - [x] Implement "Examiner Persona" Prompting
+    - [x] Implement Orchestrator Endpoint (`/analyze-claim`) <!-- id: 6 -->
+- [x] Production Refactoring (Zero-Cost)
+    - [x] Implement LocalDataStore (Persistence)
+    - [x] Update Ingestion to Save Real Embeddings
+    - [x] Update Search Services to Load Real Data
+    - [x] Implement ingestion script (Split -> Embed -> Index) <!-- id: 9 -->
+- [x] Frontend Development <!-- id: 10 -->
+    - [x] Setup Next.js project <!-- id: 11 -->
+    - [x] Implement "Premium" Design System (CSS/Tailwind)
+    - [x] Create Claim Input Component
+    - [x] Create Analysis Result Component (with Citations)
+    - [x] Integrate with Real Backend API
+    - [x] Integrate with Backend API <!-- id: 14 -->
+- [x] Documentation <!-- id: 15 -->
+    - [x] Write README with setup instructions <!-- id: 16 -->
+    - [x] Create Walkthrough Artifact <!-- id: 17 -->
+- [ ] Phase 6: System Overhaul (Production Readiness) <!-- id: 18 -->
+    - [ ] Expand Data Pipeline (100 patents) <!-- id: 19 -->
+    - [x] Implement Search Confidence Thresholds <!-- id: 20 -->
+    - [x] Improve "No Results" UX <!-- id: 21 -->
+    - [x] Final End-to-End Verification <!-- id: 22 -->
+- [x] Phase 7: Desktop Migration (Remote Dev) <!-- id: 23 -->
+    - [x] Establish SSH Connection <!-- id: 24 -->
+    - [x] Provision Remote Environment <!-- id: 25 -->
+    - [x] Create Sync & Run Scripts <!-- id: 26 -->
+    - [x] Phase 7: Desktop Migration (Remote Dev) <!-- id: 23 -->
+    - [x] Establish SSH Connection <!-- id: 24 -->
+    - [x] Provision Remote Environment <!-- id: 25 -->
+    - [x] Create Sync & Run Scripts <!-- id: 26 -->
+    - [x] Verify Remote Execution <!-- id: 27 -->
+- [ ] Phase 8: Desktop Scale & Local AI (The Engine) <!-- id: 28 -->
+    - [ ] Migrate to ChromaDB (Vector Store) <!-- id: 29 -->
+    - [ ] Implement LLM Abstraction (Gemini vs. Ollama) <!-- id: 30 -->
+    - [ ] Create Mass Ingestion Pipeline (Multi-threaded) <!-- id: 31 -->
+    - [ ] Add PDF Report Export <!-- id: 32 -->

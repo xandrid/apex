@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+google-cloud-aiplatform
+google-generativeai
+google-cloud-bigquery
+db-dtypes
+rank_bm25
+numpy
+pydantic
+python-dotenv
+httpx
+google-cloud-bigquery
